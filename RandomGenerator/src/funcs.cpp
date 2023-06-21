@@ -12,7 +12,7 @@ int64_t singleRandom(int64_t _min, int64_t _max) {
 
 std::vector<int64_t> listRandom(int64_t _min, int64_t _max, int64_t _count,
                                 bool uniqueFlag) {
-  std::unordered_map<int, int> um;
+  std::unordered_map<int64_t, int64_t> um;
   std::vector<int64_t> ret;
   int64_t x;
   int64_t mod = _max - _min + 1;
@@ -39,7 +39,7 @@ int64_t selectRandom(std::vector<int64_t> &range) {
 
 std::vector<int64_t> selectRangeRandom(std::vector<int64_t> &range,
                                        int64_t _count, bool uniqueFlag) {
-  std::unordered_map<int, int> um, distinctValueCount;
+  std::unordered_map<int64_t, int64_t> um, distinctValueCount;
   int64_t mod = range.size();
   int64_t idx = -1;
   std::vector<int64_t> ret;

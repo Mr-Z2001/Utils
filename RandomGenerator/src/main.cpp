@@ -39,7 +39,6 @@ int main() {
   cin >> option;
   int64_t _min, _max, res, _count;
   bool uniqueFlag, end = false;
-  char c;
   std::vector<int64_t> v_in, v_out;
   switch (option) {
     end = false;
@@ -85,14 +84,14 @@ int main() {
     cout << "Please input the list, the number of elements you want" << endl;
     cout << "The size of the list" << endl;
     cin >> _count;
-    cout << "The size of the results" << endl;
-    cin >> _max;
     cout << "Please input the list, seperated by space" << endl;
     v_in.clear();
     while (_count--) {
       cin >> res;
       v_in.emplace_back(res);
     }
+    cout << "The size of the results" << endl;
+    cin >> _max;
     cout << "Need to be unique?(y/n/q)";
     uniqueFlag = readFlag(end);
     if (end)
