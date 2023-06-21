@@ -3,7 +3,7 @@
 
 ### 1 Contents
 
-Data structures and algorithms
+Data structures and algorithms and some small apps.
 
 ### 2 Language
 C++
@@ -16,3 +16,7 @@ C++
 
 #### 3.2 Algorithms
 - 
+
+#### 3.3 Small Apps
+
+- Random Generator -cli
